@@ -74,11 +74,11 @@ if (form) {
   const nombre  = $("#nombre", form);
   const email   = $("#email", form);
   const mensaje = $("#mensaje", form);
+  const formMsg = $("#formMsg", form);
 
   const showErr = (input, msg) => {
     const prev = input.nextElementSibling;
-    if (prev && prev.classList && prev.classList.contains("error")) prev.remove();
-
+    if (prev && prev.classList.contains("error")) prev.remove();
     const span = document.createElement("span");
     span.className = "error";
     span.textContent = msg;
@@ -89,6 +89,8 @@ if (form) {
     e.preventDefault();
     let ok = true;
     $$(".error", form).forEach(e => e.remove());
+    formMsg.textContent = "";
+    formMsg.className = "";
 
     if (!nombre.value.trim()) { showErr(nombre, "El nombre es obligatorio"); ok = false; }
     const emailOk = /^\S+@\S+\.\S+$/.test(email.value.trim());
@@ -96,11 +98,13 @@ if (form) {
     if (mensaje.value.trim().length < 5) { showErr(mensaje, "El mensaje debe tener al menos 5 caracteres"); ok = false; }
 
     if (ok) {
-      alert("Formulario enviado con éxito");
+      formMsg.textContent = "✅ Formulario enviado con éxito";
+      formMsg.className = "success";
       form.reset();
     }
   });
 }
+
 
 const buscador   = $("#buscador");
 const servicios  = $$(".servicio");
@@ -134,7 +138,7 @@ function obtenerDia(numero) {
 
 const perfilEl = $("#perfil");
 if (perfilEl) {
-  const perfil = { nombre: "Alma Tierra", ciudad: "San Cristobal", fundado: ANIO };
+  const perfil = { nombre: "Alma Tierra", ciudad: "San Cristobal, Tachira, Venezuela", fundado: ANIO };
   perfilEl.innerHTML = `
     <h3>${perfil.nombre}</h3>
     <p>Ciudad: ${perfil.ciudad}</p>
@@ -152,6 +156,10 @@ $$("td[data-precio]").forEach(td => {
   const valor = parseFloat(td.dataset.precio);
   td.textContent = Util.formatearMoneda(valor);
 });
+
+
+
+
 
 
 
