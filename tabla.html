@@ -1,102 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bienvenidos a nuestra tienda de maquillaje. Aqui encontraras nuestros productos">
-    <title>Alma tierra</title>
-    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Bienvenidos a nuestra tienda de maquillaje. Aqui encontraras nuestros productos">
+<title>Alma tierra</title>
+
 </head>
 
 <link rel="stylesheet" href="css/styles.css">
 <script src="js/app.js"></script>
+
 <body>
-    <div class="banner">¡Bienvenidos a Alma Tierra!</div>
-    <header>
-        <h1>Alma tierra</h1>
-        <nav>
-            <ul>
-                <li><a href="inicio.html">Inicio</a></a></li>
-                <li><a href="acerca.html">Acerca</a></a></li>
-                <li><a href="servicios.html">Servicios</a></a></li>
-                <li><a href="contacto.html">Contacto</a></a></li>
-                <li><a href="blog.html">Blog</a></a></li>
-                <li><a href="articulo1.html"> Articulo1</a></a></li>
-                <li><a href="articulo2.html">Articulo2</a></a></li>
-                <li><a href="galeria.html">Galeria</a></a></li>
-                <li><a href="tabla.html"Articulo class="activo">Tabla</a></a></li>
-                <li><a href="legal.html">Legal</a></a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="banner">¡Bienvenidos a Alma Tierra!</div>
+  <header>
+    <div id="reloj"></div>
+    <h1>Alma tierra</h1>
+    <nav>
+      <ul>
+        <li><a href="inicio.html" data-page="inicio">Inicio</a></li>
+        <li><a href="acerca.html" data-page="acerca">Acerca</a></li>
+        <li><a href="servicios.html" data-page="servicios">Servicios</a></li>
+        <li><a href="contacto.html" data-page="contacto">Contacto</a></li>
+        <li><a href="blog.html" data-page="blog">Blog</a></li>
+        <li><a href="articulo1.html" data-page="articulo1">Articulo1</a></li>
+        <li><a href="articulo2.html" data-page="articulo2">Articulo2</a></li>
+        <li><a href="galeria.html" data-page="galeria">Galería</a></li>
+        <li><a href="tabla.html" data-page="tabla">Tabla</a></li>
+        <li><a href="legal.html" data-page="legal">Legal</a></li>
 
-    <main>
-        <section id="tabla">
-    <h2>Productos disponibles por marca</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Producto</th>
-          <th>Marca</th>
-          <th>Precio</th>
-          <th>Disponibilidad</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Protector Solar Facial</td>
-          <td>Isdin</td>
-          <td>$28.00</td>
-          <td>En stock</td>
-        </tr>
-        <tr>
-          <td>Base de Maquillaje Líquida</td>
-          <td>Rare Beauty</td>
-          <td>$35.00</td>
-          <td>En stock</td>
-        </tr>
-        <tr>
-          <td>Labial Líquido Sangría</td>
-          <td>Belah Beauty</td>
-          <td>$18.00</td>
-          <td>Agotado</td>
-        </tr>
-        <tr>
-          <td>Kit de Viaje Centella</td>
-          <td>Centella</td>
-          <td>$40.00</td>
-          <td>En stock</td>
-        </tr>
-        <tr>
-          <td>Crema Hidratante Facial</td>
-          <td>Isdin</td>
-          <td>$30.00</td>
-          <td>En stock</td>
-        </tr>
-        <tr>
-          <td>Paleta de Sombras</td>
-          <td>Rare Beauty</td>
-          <td>$45.00</td>
-          <td>En stock</td>
-        </tr>
-        <tr>
-          <td>Rubor en Polvo</td>
-          <td>Belah Beauty</td>
-          <td>$20.00</td>
-          <td>En stock</td>
-        </tr>
-        <tr>
-          <td>Serum Facial Centella</td>
-          <td>Centella</td>
-          <td>$38.00</td>
-          <td>Agotado</td>
-        </tr>
-      </tbody>
-    </table>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="tabla">
+      <h2>Productos disponibles por marca</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Marca</th>
+            <th>Precio</th>
+            <th>Disponibilidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Protector Solar Facial</td>
+            <td>Isdin</td>
+            <td>$28.00</td>
+            <td>En stock</td>
+          </tr>
+          <tr>
+            <td>Base de Maquillaje Líquida</td>
+            <td>Rare Beauty</td>
+            <td>$35.00</td>
+            <td>En stock</td>
+          </tr>
+          <tr>
+            <td>Labial Líquido Sangría</td>
+            <td>Belah Beauty</td>
+            <td>$18.00</td>
+            <td>Agotado</td>
+          </tr>
+          <tr>
+            <td>Kit de Viaje Centella</td>
+            <td>Centella</td>
+            <td>$40.00</td>
+            <td>En stock</td>
+          </tr>
+          <tr>
+            <td>Crema Hidratante Facial</td>
+            <td>Isdin</td>
+            <td>$30.00</td>
+            <td>En stock</td>
+          </tr>
+          <tr>
+            <td>Paleta de Sombras</td>
+            <td>Rare Beauty</td>
+            <td>$45.00</td>
+            <td>En stock</td>
+          </tr>
+          <tr>
+            <td>Rubor en Polvo</td>
+            <td>Belah Beauty</td>
+            <td>$20.00</td>
+            <td>En stock</td>
+          </tr>
+          <tr>
+            <td>Serum Facial Centella</td>
+            <td>Centella</td>
+            <td>$38.00</td>
+            <td>Agotado</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
-      </main>
+  </main>
 
-    <footer>
-        <p>Alma Tierra 2025</p>
-    </footer>
+  <footer>
+    <p>Alma Tierra 2025</p>
+  </footer>
 </body>
+
 </html>
