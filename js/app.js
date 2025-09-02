@@ -134,7 +134,7 @@ function obtenerDia(numero) {
 
 const perfilEl = $("#perfil");
 if (perfilEl) {
-  const perfil = { nombre: "Alma Tierra", ciudad: "SC", fundado: ANIO };
+  const perfil = { nombre: "Alma Tierra", ciudad: "San Cristobal", fundado: ANIO };
   perfilEl.innerHTML = `
     <h3>${perfil.nombre}</h3>
     <p>Ciudad: ${perfil.ciudad}</p>
@@ -143,10 +143,17 @@ if (perfilEl) {
 }
 
 class Util {
-  static formatearMoneda(valor, moneda = "VES", locale = "es-VE") {
+  static formatearMoneda(valor, moneda = "COP", locale = "es-CO") {
     return new Intl.NumberFormat(locale, { style: "currency", currency: moneda }).format(valor);
   }
 }
+
+$$("td[data-precio]").forEach(td => {
+  const valor = parseFloat(td.dataset.precio);
+  td.textContent = Util.formatearMoneda(valor);
+});
+
+
 
 
 

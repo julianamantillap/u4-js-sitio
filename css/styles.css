@@ -399,3 +399,126 @@ article a:hover {
   outline: 2px solid #0D47A1;
   outline-offset: 2px;
 }
+#salida,
+#visitasBox,
+.colores,
+#notas {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#salida:hover,
+#visitasBox:hover,
+.colores:hover,
+#notas:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#btnVisitas {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  background: #0D47A1;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#btnVisitas:hover {
+  background: #0D47A1;
+}
+
+#totalVisitas {
+  font-size: 1.3rem;
+  color: #0D47A1;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.colores button {
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 0.3rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.colores button:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+#btnRojo { background: #ff4d4d; color: #fff; }
+#btnVerde { background: #4CAF50; color: #fff; }
+#btnAzul { background: #2196F3; color: #fff; }
+
+#notas h2 {
+  margin-bottom: 0.8rem;
+  color: #0D47A1;
+}
+
+#notaInput {
+  width: 70%;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#agregarNota {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #ff5733;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#agregarNota:hover {
+  background: #ff5733;
+}
+
+#notaError {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: red;
+}
+
+#listaNotas {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+#listaNotas li {
+  padding: 0.4rem 0.6rem;
+  background: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 0.4rem;
+  border: 1px solid #ddd;
+}
+
+#buscador {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.6rem 1rem;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
